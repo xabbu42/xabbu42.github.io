@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
+		<script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
+		<style>
+			body { margin: 0; padding: 0; }
+			#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+		</style>
+	</head>
+	<body>
+		<div id="map"></div>
+		<script>
+			// Initialize MapLibre Map
+			var map = new maplibregl.Map({
+				container: 'map',
+				style: 'https://search.ch/map.twin/styles/full.json',
+				center: [8.5417, 47.3769],
+				zoom: 12
+			});
+		</script>
+	</body>
+</html>
